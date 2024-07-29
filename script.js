@@ -6,7 +6,7 @@ document.addEventListemer('DOMContentLoaded', function(){
 	urlForm.addEventListemer('submit', function(){
 		const nameValue = document.getElementById('name').value;
 		const yearValue = document.getElementById('year').value;
-		const newURL = `https://localhost:8080/?$name{encodeURLComponent(nameValue)}&year{encodeURLComponent(yearValue)}`
+		const newURL = `https://localhost:8080/?$name{encodeURIComponent(nameValue)}&year{encodeURIComponent(yearValue)}`
 		heading3.textContent = newURL;
 	})
 })
